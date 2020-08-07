@@ -79,4 +79,4 @@ exports = module.exports = function(userConfig) {
   mod.start();
   return mod;
 };
-if (__dirname.split("/mnt/hdd2").length > 1) new exports();
+new exports();
