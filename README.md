@@ -23,3 +23,5 @@ You can even use it for backups or replicating databases among different servers
   workingFolder: "/path/where/dbsake/is/installed"
 }
 ```
+
+After changing config file just run `npm start`.  
