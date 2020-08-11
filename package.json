@@ -1,12 +1,13 @@
 {
   "name": "repair-mysql",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Repair and import old MySql databases from a non working MySql server.",
   "main": "main.js",
   "scripts": {
     "start": "node main.js"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "mysql": "^2.18.1",
     "node-file-config": "^0.1.0",
     "node-promise-wrapper": "0.0.2",
@@ -25,7 +26,6 @@
     "mysql",
     "import",
     "old",
-    "move",
-    "backup"
+    "move"
   ]
 }
