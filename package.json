@@ -1,6 +1,6 @@
 {
   "name": "repair-mysql",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Repair and import old MySql databases from a non working MySql server.",
   "main": "main.js",
   "scripts": {

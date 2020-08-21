@@ -6,7 +6,7 @@ exports = module.exports = function() {
     user: "root",
     password: "123456",
     port: 3306,
-    mysqlUser: "mysql",
+    mysqlUser: "mysql:mysql",
     /*
       curl -s http://get.dbsake.net > dbsake
       chmod u+x dbsake

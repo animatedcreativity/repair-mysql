@@ -8,6 +8,7 @@ exports = module.exports = function(userConfig) {
   var options = {
     host     : config.host,
     user     : config.user,
+    port: config.port,
     password : config.password
   };
   var connection = mysql.createConnection(options);
@@ -79,7 +80,7 @@ exports = module.exports = function(userConfig) {
                 var {error, result} = await mod.wrapper("result", cmd.run("cp " + ibdFile + " " + config.newFolder + "/" + database + "/" + ibdFile.split("/").pop(), {onData: function(d) {
                   console.log(d);
                 }}));
-                var {error, result} = await mod.wrapper("result", cmd.run("chown " + config.mysqlUser + ":" + config.mysqlUser + " " + config.newFolder + "/" + database + "/" + ibdFile.split("/").pop(), {onData: function(d) {
+                var {error, result} = await mod.wrapper("result", cmd.run("chown " + config.mysqlUser + " " + config.newFolder + "/" + database + "/" + ibdFile.split("/").pop(), {onData: function(d) {
                   console.log(d);
                 }}));
                 await mod.wrapper("result", mod.query("ALTER TABLE `" + database + "`.`" + table + "` IMPORT TABLESPACE", database));
